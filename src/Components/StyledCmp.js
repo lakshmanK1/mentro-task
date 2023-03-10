@@ -26,9 +26,7 @@ align-items:center;
     height:80%;
     background:#C5F8C7;
     border-radius:0 0 50% 50%/0 0 100% 100%;
-    margin-left:200px;
- 
-}`;
+   }`;
 
 
 export const CircleDiv = styled.div`position:relative; z-index:1;
@@ -44,7 +42,8 @@ export const SpinnerDiv = styled.div`--n:5; --d:12s;
    border-radius:51%;
    border:3px dashed rgba(0,0,0,0.5);
    position:relative;
-   margin:200px;`;
+   margin:200px;
+   `;
 
    export const RoundDiv = styled.div`
    display:block;
@@ -62,20 +61,27 @@ export const SpinnerDiv = styled.div`--n:5; --d:12s;
 
 // Slider
 
-export const MainProfileDiv = styled.div``;
+export const MainProfileDiv = styled.div`width:300px; margin-top:200px;
+height:750px; padding:10px;`;
 
-export const InfoDiv = styled.div``;
+export const InfoDiv = styled.div`width:300px;`;
 
 export const RatingStarDiv = styled.div``;
 
-export const Span = styled.span`display:flex;`;
-export const MentorName = styled.h3``;
+export const Span = styled.span`display:flex; color:#4CAF50;
+font-size:35px; font-weight:900;`;
+export const MentorName = styled.h3`letter-spacing:2px; font-size:30px; font-weight:750;`;
+export const MentorRole = styled.h5`font-size:18px;`;
+export const MentorBio = styled.p`width:300px;`;
+export const Button = styled.button`background-color:#4caf50; color:white; border:none;
+font-size:15px; padding:18px; font-weight:800; box-shadow: 10px 10px 170px 70px rgba(54,224,35,0.53);`;
 
 
-export const SliderDiv = styled.div`display:flex; margin-bottom:330px; padding:20px;`;
+export const SliderDiv = styled.div`display:flex; margin-bottom:330px; padding:20px;
+height:200px; align-items:center; `;
 export const SliderImage = styled.img`width:170px; height:170px; border-radius:50%; margin:30px;`;
-export const ArrowIcons = styled.div`margin-top:10px; background:#B2B2B2; padding:8px;
-cursor:pointer; height:40px; width:40px; text-align:center; border-radius:50%;`;
+export const ArrowIcons = styled.div`margin-top:10px; background:#4CAF50; padding:8px;
+cursor:pointer; height:40px; width:40px; text-align:center; border-radius:50%; color:white;`;
 
 
 // Style image objects

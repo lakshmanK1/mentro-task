@@ -4,7 +4,7 @@ import {BsChevronLeft, BsChevronRight, BsFillStarFill} from 'react-icons/bs'
 import { ImageUrls } from './StyledCmp'
 import { MentorData } from './Data'
 import { MainDiv, MentorsDiv, CircleDiv, SpinnerDiv, RoundDiv, GreenDiv, Image} from './StyledCmp'
-import {MainProfileDiv, ProfileImag, InfoDiv, RatingStarDiv, Span, SliderDiv, SliderImage, ArrowIcons } from './StyledCmp'
+import {MainProfileDiv, InfoDiv, RatingStarDiv, Span, SliderDiv, SliderImage, ArrowIcons, MentorBio, MentorName, MentorRole, Button } from './StyledCmp'
 
 function Mentors() {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -31,9 +31,15 @@ function Mentors() {
             </SliderDiv>
             <MainProfileDiv>
               <RatingStarDiv>
-                <Span>{MentorData[currentIndex].rating}</Span>
+                <Span>{ MentorData[currentIndex].rating}</Span>
                 <Span><BsFillStarFill/><BsFillStarFill/><BsFillStarFill/><BsFillStarFill/><BsFillStarFill/></Span>
               </RatingStarDiv>
+              <InfoDiv>
+                <MentorName>{MentorData[currentIndex].name}</MentorName>
+                <MentorRole>{MentorData[currentIndex].role}</MentorRole>
+                <MentorBio>{MentorData[currentIndex].bio}</MentorBio>
+              </InfoDiv>
+              <Button>Book a session</Button>
             </MainProfileDiv>
             <CircleDiv>
               <GreenDiv>
